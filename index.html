@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>BlazRobar</title>
+    <link rel="stylesheet" href="scss/style.css"/>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // с js не стал заморачиваться, можно открыть/закрыть по кнопке
+            // клики за пределами меню не обрабатываются
+            var d = document;
+            var navButton = d.querySelector('.nav__button');
+            var navList = d.querySelector('.nav__list');
+
+            navButton.addEventListener('click', function () {
+                navList.classList.toggle('_opened');
+            });
+        });
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrapper">
+    <nav role="main" class="nav">
+        <span class="nav__button">
+            <span class="nav__button-icon"></span>
+        </span>
+        <ul class="nav__list">
+            <li class="nav__i">
+                <a class="nav__link" href="#">
+                    Psd websites
+                </a>
+            </li>
+            <li class="nav__i">
+                <a class="nav__link" href="#">
+                    Ui kits
+                </a>
+            </li>
+            <li class="nav__i">
+                <a class="nav__link" href="#">
+                    Premium psd files
+                </a>
+            </li>
+            <li class="nav__i">
+                <a class="nav__link" href="#">
+                    About
+                </a>
+            </li>
+            <li class="nav__i">
+                <a class="nav__link" href="#">
+                    Blog
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <a href="#" class="banner">
+        <div class="banner__text">
+            <h1 class="banner__title">
+                Awesome Free PSD <br />
+                templates & Resources
+            </h1>
+            <div class="banner__subtitle">
+                <span class="banner__site">
+                    www.BlazRobar.com
+                </span>
+            </div>
+        </div>
+    </a>
+    <a href="#" class="slogan">
+        <span class="slogan__text">
+            I'm like the Robin Hood of PSD files.
+        </span>
+    </a>
+    <div class="photos">
+        <a href="#" class="photos__link"></a>
+        <img src="img/2.jpg" alt="Girl" class="photos__photo"/>
+        <img src="img/3.jpg" alt="Bridge" class="photos__photo"/>
+    </div>
+    <div class="description">
+        <h2 class="description__title">
+            BlazRobar.com
+        </h2>
+        <div class="description__text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.
+            </p>
+            <p>
+                Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.
+            </p>
+            <p>
+                Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

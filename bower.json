@@ -1,0 +1,8 @@
+{
+  "name": "adaptive-test",
+  "version": "0.0.1",
+  "dependencies": {
+    "modularized-normalize-scss": "~3.0.3"
+  },
+  "private": true
+}
